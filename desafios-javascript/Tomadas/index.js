@@ -1,43 +1,4 @@
 /*
-Leia um valor inteiro N. Apresente o quadrado de cada um dos valores pares, de 1 até N, inclusive N, se for o caso.
-
-Entrada
-A entrada contém um valor inteiro N (5 < N < 2000).
-
-Saída
-Imprima o quadrado de cada um dos valores pares, de 1 até N, conforme o exemplo abaixo.
-
-Tome cuidado! Algumas linguagens tem por padrão apresentarem como saída 1e+006 ao invés de 1000000 o que ocasionará resposta errada. 
-Neste caso, configure a precisão adequadamente para que isso não ocorra.
-*/
-
-let lines = gets().split('\n');
-
-var N = parseInt(lines.shift());
-for (let i = 1; i <= N; i++ ) {
-	if (i % 2 == 0) print(i + "^2 = " + (i * i));    //escreva sua lógica nos espaços em branco
-}
-
-
-/*
-Desafio
-Leia um valor inteiro N. Apresente todos os números entre 1 e 10000 que divididos por N dão resto igual a 2.
-
-Entrada
-A entrada contém um valor inteiro N (N < 10000).
-
-Saída
-Imprima todos valores que quando divididos por N dão resto = 2, um por linha.
-*/
-
-let lines = gets().split('\n');
-
-let N = parseInt(lines.shift());
-for (let i = 1; i < 10000; i++) {
-	if (i % N == 2) print(i);
-}
-
-/*
 Finalmente, o time da Universidade conseguiu a classificação para a Final Nacional da Maratona de Programação da SBC. Os três membros do time e o técnico estão ansiosos para bem representar a Universidade, e além de treinar muito, preparam com todos os detalhes a sua viagem a São Paulo, onde será realizada a Final Nacional.
 
 Eles planejam levar na viagem todos os seus vários equipamentos eletrônicos: celular, tablet, notebook, ponto de acesso wifi, câmeras, etc, e sabem que necessitarão de várias tomadas de energia para conectar todos esses equipamentos. Eles foram informados de que ficarão os quatro no mesmo quarto de hotel, mas já foram alertados de que em cada quarto há apenas uma tomada de energia disponível.
